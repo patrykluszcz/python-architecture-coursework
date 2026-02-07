@@ -1,7 +1,6 @@
 import unittest
 from bank_account import BankAccount
 
-
 class TestBankAccount(unittest.TestCase):
 
     def test_initial_balance(self):
