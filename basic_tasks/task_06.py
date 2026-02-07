@@ -29,7 +29,8 @@ def parse_weather_data(xml_content):
                 name = station_name.text
                 try:
                     speed = float(wind_speed.text)
-                    station_winds[name].append(speed)
+                    if speed < 200:  # Filtrowanie błędnych odczytów (np. 999.9)
+                        station_winds[name].append(speed)
                 except (ValueError, TypeError):
                     continue
         
