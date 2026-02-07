@@ -248,6 +248,8 @@ async function selectUser(userId, username) {
 
         if (document.getElementById('cart').classList.contains('active')) {
             loadCart();
+        } else {
+            showSection('products');
         }
     } catch (error) {
         showAlert(`Błąd: ${error.message}`, 'error');
