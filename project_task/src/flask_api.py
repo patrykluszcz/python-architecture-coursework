@@ -230,7 +230,7 @@ def add_to_cart(user_id):
     except Exception as e:
         return jsonify({'error': str(e)}), 400
 
-@app.route("/api/cart/<user_id>/remove", methods=["POST"])
+@app.route("/api/cart/<user_id>/remove", methods=["DELETE"])
 def remove_from_cart(user_id):
     try:
         data = request.get_json()

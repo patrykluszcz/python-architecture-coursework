@@ -196,7 +196,7 @@ async function removeFromCart(productId) {
 
     try {
         const response = await fetch(`${API_BASE}/api/cart/${currentUser.user_id}/remove`, {
-            method: 'POST',
+            method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
             },
