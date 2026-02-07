@@ -6,7 +6,6 @@ from src.order import Order, OrderStatus
 from src.product import Product
 from src.user import User
 
-
 class TestOrder:
     """Test cases for Order class."""
 

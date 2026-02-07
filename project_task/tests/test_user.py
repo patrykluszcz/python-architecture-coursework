@@ -4,7 +4,6 @@ import pytest
 
 from src.user import User
 
-
 class TestUser:
     """Test cases for User class."""
 

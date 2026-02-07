@@ -1,6 +1,7 @@
 """Unit tests for Product module."""
 
 import pytest
+
 from src.product import Product
 
 class TestProduct:

@@ -7,7 +7,6 @@ from src.order import OrderStatus
 from src.product import Product
 from src.user import User
 
-
 class TestECommercePlatform:
     """Test cases for ECommercePlatform class."""
 

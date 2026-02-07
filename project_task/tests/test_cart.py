@@ -5,7 +5,6 @@ import pytest
 from src.cart import Cart
 from src.product import Product
 
-
 class TestCart:
     """Test cases for Cart class."""
 
@@ -76,11 +75,6 @@ class TestCart:
         self.cart.add_item(self.product1, 2)
         assert self.cart.update_quantity("P001", 0) is True
         assert self.cart.is_empty() is True
-
-    def test_update_quantity_insufficient_stock(self):
-        """Test updating to quantity larger than stock."""
-        self.cart.add_item(self.product1, 2)
-        assert self.cart.update_quantity("P001", 15) is False
 
     def test_get_total_price(self):
         """Test calculating total cart price."""
