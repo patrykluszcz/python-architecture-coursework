@@ -24,7 +24,6 @@ def fetch_universities(country):
     with lock:
         results[country] = universities
 
-
 threads = []
 
 for country in countries:

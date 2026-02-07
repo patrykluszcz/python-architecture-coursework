@@ -40,6 +40,5 @@ def main():
     for r in all_results[:5]:
         print(r)
 
-
 if __name__ == "__main__":
     main()

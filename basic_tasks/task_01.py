@@ -20,5 +20,4 @@ def log_param_types(func):
 def example_function(a, b, name="Jerzy"):
     return a + b
 
-
 example_function(5, 10, name="Andrzej")
